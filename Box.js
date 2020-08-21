@@ -31,6 +31,10 @@ class Box{
       translate(pos.x, pos.y);
       rotate(angle);
       rectMode(CENTER);
+      var r= random(0,255);
+      var g= random(0,255);
+      var   b= random(0,255);
+      fill(r,g,b);
       rect(0,0,this.width, this.height);
       pop();
     }else{
