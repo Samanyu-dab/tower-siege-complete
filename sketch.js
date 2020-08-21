@@ -5,7 +5,7 @@ const Constraint = Matter.Constraint;
 
 var engine, world;
 
-var  slingShot;
+var  slingShot1;
 var score = 0;
 
 function preload() {
@@ -60,7 +60,7 @@ box11 = new Box(680,125,30,40)
 
   
 
-  slingshot = new SlingShot(this.polygon,{x:100 , y:170})
+  slingshot1 = new SlingShot(this.polygon,{x:100 , y:170})
 }
 
 function draw(){
@@ -120,7 +120,7 @@ function draw(){
 
 
    
-  slingshot.display();   
+  slingshot1.display();   
 }
 function mouseDragged(){
 Matter.Body.setPosition(this.polygon, {x:mouseX , y:mouseY})
@@ -129,7 +129,7 @@ Matter.Body.setPosition(this.polygon, {x:mouseX , y:mouseY})
 
 }
 function mouseReleased(){
-slingshot.fly()
+slingshot1.fly()
 
 }
 
